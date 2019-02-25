@@ -1,0 +1,57 @@
+<html>
+<head> 
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+  <script src="index.js"></script>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  
+  
+  </head>
+<body onload="resetBoard()">
+  <div class="container text-center"> 
+	<div class="row">
+	   <div class="col-12">
+			<h1>Simon Game</h1>
+       </div>
+	</div>
+    
+      <div class="row justify-content-center"> 
+        <div class="col-lg-1 col-md-4">
+          <button type="button" class="btn btn-primary" onclick="start();" id="startBtn" >Start</button>
+        </div>
+		<div class="col-lg-1 col-md-4">
+          <button type="button" class="btn btn-warning"onclick="resetBoard();" id="resetBtn">Reset</button>
+        </div>
+		<div class="col-lg-1 col-md-4">
+          <button type="button" class="btn btn-danger text-nowrap " onclick="chStrict();" id="strictBtn">Strict mode</button>
+        </div>
+		
+      </div>
+	  
+	  
+       <div class="row justify-content-center">
+		   <div class="col-xl-12 col-md-12">	   
+			  <div id="screen" class="screen alert alert-light"></div>
+			</div>
+	   </div>
+      <div class="row">
+            <div class="col-xl-3 col-md-3 col-xs-3">  
+              <button class="btn btn-lg btn-info btn-block" id="w1" onclick="playerMove(1);">1</button>
+            </div>
+            <div class="col-xl-3 col-md-3 col-xs-3"> 
+              <button class="btn btn-lg btn-warning btn-block" id="w2" onclick="playerMove(2);">2</button>
+            </div>
+            <div class="col-xl-3 col-md-3 col-xs-3"> 
+              <button class="btn btn-lg btn-danger btn-block" id="w3" onclick="playerMove(3);">3</button>
+            </div>
+            <div class="col-xl-3 col-md-3 col-xs-3"> 
+              <button class="btn btn-lg btn-success btn-block" id="w4" onclick="playerMove(4);">4</button>
+            </div>
+          
+      </div>
+    </div>
+</body>
+</html>
