@@ -5,10 +5,10 @@ var step;		//simon game step counter
 	var playSeq;	//Array for players move. It is empty at the start of each round
 	var strictF;	//flag if strict mode is enabled
 
-	var audio1 = new Audio('https://www.noiseforfun.com/waves/voice-and-speech/NFF-dwarf-laugh.wav');
-	var audio2 = new Audio('https://www.noiseforfun.com/waves/voice-and-speech/NFF-girl-dumb-laugh.wav');
-	var audio3 = new Audio('https://www.noiseforfun.com/waves/voice-and-speech/NFF-man-silly-laugh.wav');
-	var audio4 = new Audio('https://www.noiseforfun.com/waves/voice-and-speech/NFF-mad-laughter-2.wav');
+	var audio1 = new Audio('NFF-dwarf-laugh.wav');
+	var audio2 = new Audio('NFF-girl-dumb-laugh.wav');
+	var audio3 = new Audio('NFF-man-silly-laugh.wav');
+	var audio4 = new Audio('NFF-mad-laughter-2.wav');
 	var sounds=[audio1,audio2,audio3,audio4];	//an array with the 4 sounds for the 4 buttons
 	
 
@@ -21,10 +21,10 @@ function init(){
 	strictF=0;	//flag if strict mode is enabled
 	document.getElementById('screen').innerHTML = "- -";
 
-     audio1 = new Audio('https://www.noiseforfun.com/waves/voice-and-speech/NFF-dwarf-laugh.wav');
-     audio2 = new Audio('https://www.noiseforfun.com/waves/voice-and-speech/NFF-girl-dumb-laugh.wav');
-     audio3 = new Audio('https://www.noiseforfun.com/waves/voice-and-speech/NFF-man-silly-laugh.wav');
-     audio4 = new Audio('https://www.noiseforfun.com/waves/voice-and-speech/NFF-mad-laughter-2.wav');
+    audio1 = new Audio('NFF-dwarf-laugh.wav');
+    audio2 = new Audio('NFF-girl-dumb-laugh.wav');
+    audio3 = new Audio('NFF-man-silly-laugh.wav');
+    audio4 = new Audio('NFF-mad-laughter-2.wav');
 	sounds=[audio1,audio2,audio3,audio4];	//an array with the 4 sounds for the 4 buttons
 } 
 

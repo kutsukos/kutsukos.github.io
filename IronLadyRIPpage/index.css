@@ -1,6 +1,6 @@
 body {
     background-position: left top;
-    background: url("http://i68.tinypic.com/2w6gy2h.jpg");
+    background: url("back.jpg");
     background-repeat: repeat;
     font-family: 'Roboto', sans-serif;
 } 
@@ -13,8 +13,4 @@ body {
 
 .right-float{
   float: right;
-}
-
-.foooter{
-  height:5px;
 }
