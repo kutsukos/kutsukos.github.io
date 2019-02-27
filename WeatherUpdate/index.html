@@ -1,0 +1,53 @@
+<html lang="en">
+  <head>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+
+    <script src="index.js"></script>
+    <link href="index.css" rel="stylesheet" type="text/css">
+  </head>
+  <body onload="refresh()">
+    <div class="container text-center main">
+		<div class="row">
+			<div class="col-md-12 col-xl-12">
+				<h1>Weather Update</h1>
+				<h6><i>"Conversation about the weather is the last refuge of the unimaginative"</i></h6>
+				<h6><small>-Oscar Wilde</small></h6>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 col-xl-12">
+				<span id="wicon"></span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 col-xl-12">
+				<span id="wdesc1"> </span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 col-xl-12">
+				<span id="wdesc2"> </span>
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="col-md-12 col-xl-6 buttonArea">
+			  <button class="btn  btn-primary" onClick="changeMetrics();">Change Metrics</button>
+			</div>
+			<div class="col-md-12 col-xl-6 buttonArea">
+			  <button class="btn  btn-danger" onClick="refresh();" id="refreshBtn"><span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> Refresh</button>
+			</div>
+        </div>
+		
+		
+		
+      </div>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+body {
+    background-position: left top;
+    background: url("back.png");
+    background-repeat: repeat;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main{
+	background-color: white;
+	opacity:0.8;
+}
+
+.buttonArea{
+  padding-bottom: 1%;
+
+}
