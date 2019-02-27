@@ -16,7 +16,7 @@ function refresh() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function(position) {
       //edw vres ti kairo exei ekei
-        var api = "http://api.openweathermap.org/data/2.5/weather?";
+        var api = "https://api.openweathermap.org/data/2.5/weather?";
         var coords = "lat=" + position.coords.latitude + "&lon=" + position.coords.longitude;
         var appid = "&appid=061f24cf3cde2f60644a8240302983f2";
         var final=api + coords + appid;
@@ -28,7 +28,7 @@ function refresh() {
           var tempC=tempK-273.15; //Celcius
           var humidity=w.main.humidity+ " %"; //percent
           var windSpeed=w.wind.speed + " km/h";
-          var wIconLink = "http://openweathermap.org/img/w/"+ w.weather[0].icon +".png";          
+          var wIconLink = "https://openweathermap.org/img/w/"+ w.weather[0].icon +".png";          
           var Icon=" <img class=\"img-responsive icon-weather\" src=\""+wIconLink+"\"></img>";
           $("#wicon").html(Icon);
           var Desc ="<b>Place: </b>" +place;
@@ -49,7 +49,7 @@ function changeMetrics() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function(position) {
       //edw vres ti kairo exei ekei
-        var api = "http://api.openweathermap.org/data/2.5/weather?";
+        var api = "https://api.openweathermap.org/data/2.5/weather?";
         var coords = "lat=" + position.coords.latitude + "&lon=" + position.coords.longitude;
         var appid = "&appid=061f24cf3cde2f60644a8240302983f2";
         var final=api + coords + appid;
