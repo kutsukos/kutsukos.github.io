@@ -18,8 +18,6 @@ function refresh(){
 
 
 function refresh2(cur_lat,cur_log) {  
-  cur_lat=38.102189;
-  cur_log=-122.380125;
   displayWeatherInCurrentPlace(cur_lat,cur_log);  
   filterPlaces(cur_lat,cur_log);  
   refreshmap(cur_lat,cur_log);  
