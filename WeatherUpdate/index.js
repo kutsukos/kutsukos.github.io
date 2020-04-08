@@ -18,6 +18,8 @@ function refresh(){
 
 
 function refresh2(cur_lat,cur_log) {  
+  //cur_lat=38.102189;  //fake gps location in order to be in USA and be able to calculate the distances right.
+  //cur_log=-122.380125;
   displayWeatherInCurrentPlace(cur_lat,cur_log);  
   filterPlaces(cur_lat,cur_log);  
   refreshmap(cur_lat,cur_log);  
@@ -126,8 +128,15 @@ function filterPlaces(mlat,mlog){
         var origins = response.originAddresses;
         for (var k = 0; k < origins.length; k++) {
           var results = response.rows[k].elements;
+
+
           for (var j = 0; j < results.length; j++) {
             var element = results[j];
+            if(element.status=="ZERO_RESULTS"){
+              distances[j].time=999999;           //Can not access the place by car situation
+              filterbyWeather(distances[j]);
+              continue;
+            }
             distances[j].time=element.duration.value/3600;
 
             if(distances[j].time <= tmp_maxtime){
