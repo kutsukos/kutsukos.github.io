@@ -1,12 +1,14 @@
 body {
     background-position: left top;
-    background: url("back.jpg");
-    background-repeat: repeat;
-    font-family: 'Roboto', sans-serif;
+    background-color:white;
+    font-family: 'Quicksand', sans-serif;
 }
- 
-.quotesgenerator{
-  background-color:#fff;
-  opacity:0.8;
-  padding:1%;
+
+a,a:hover{
+  color:black;
+}
+
+h6 {
+  margin-top:0;
+  margin-bottom:0;
 }
