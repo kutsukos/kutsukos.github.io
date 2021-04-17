@@ -27,12 +27,12 @@ h5,h6 {
   display:none;
 }
 
-.black_row{
-	background-color:black;
-	color:white;
+#black_row{
+	background-color:#212121;
+	color:#f0f0f0;
 }
 
-.white_row{
-	background-color:beige-white;
-	color:black;
+#white_row{
+	background-color:#f0f0f0;
+	color:#212121;
 }
