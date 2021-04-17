@@ -4,6 +4,10 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a,a:hover{
   color:black;
   padding:.2em;
@@ -21,4 +25,14 @@ h5,h6 {
 
 .submenuDEV,.submenuFOTO,.submenuZINE,.submenuFILM,.submenuPOT,.submenuCON{
   display:none;
+}
+
+.black_row{
+	background-color:black;
+	color:white;
+}
+
+.white_row{
+	background-color:beige-white;
+	color:black;
 }
