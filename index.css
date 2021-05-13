@@ -27,6 +27,9 @@ h5,h6 {
 	background-color: transparent;
 }
 
+.aun:hover{
+	background-color: transparent;
+}
 
 .submenuDEV,.submenuFOTO,.submenuZINE,.submenuFILM,.submenuPOT,.submenuCON{
   display:none;
