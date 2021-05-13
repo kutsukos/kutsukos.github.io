@@ -23,6 +23,11 @@ h5,h6 {
   margin-bottom:0;
 }
 
+.aun{
+	background-color: transparent;
+}
+
+
 .submenuDEV,.submenuFOTO,.submenuZINE,.submenuFILM,.submenuPOT,.submenuCON{
   display:none;
 }
