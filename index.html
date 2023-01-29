@@ -4,10 +4,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="index.css">
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-	<script src="index.js"></script>
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<style>
+		body {background-color:	#ffffff; font-family:	'Quicksand', sans-serif;}
+		a,a:hover {color:	black; padding:	.2em;}
+		a:hover {text-decoration:	line-through;}
+		.title {background-color:	#f0f0f0; color:	#212121;}
+		#white_text {color:	#f0f0f0;}
+		.row1 {background-color:	#00aaa0;}
+		.row2 {background-color:	#ffb85f;}
+		.row3 {background-color:	#ff7a5a;}
+		.row4 {background-color:	#8ed2c9;}
+	</style>
 </head>
 <body>
 	<div class="container-fluid text-center">
@@ -17,11 +26,21 @@
 			<div class="subFILM ">
 				<p><a href="https://youtu.be/is2e-6r13I0" target="_blank">Αλέξανδρος Κοντογιάννης - Αναστασία Μαυρίδη - Ψεύτικος Κόσμος</a> <small>[2021 - music video - 3min 56sec]</small>
 				<br><a href="https://www.youtube.com/watch?v=A5RIDWBx0f0" target="_blank">Cine beats - Drifting In Absence</a> <small>[2020 - music video - 2min 46sec]</small>
+				<br><a href="https://vimeo.com/426923281" target="_blank">радость - joy [part 2]</a> <small>[2018 - video short - 5min 07sec]</small>
+				<br><a href="https://vimeo.com/426331615" target="_blank">радость - joy [part 1]</a> <small>[2018 - video short - 5min 20sec]</small>
+				<br><a href="https://vimeo.com/232158965" target="_blank">Μαύρη είναι η νύχτα στα βουνά: Μια ταινία μικρού μήκους με λύκους</a> <small>[2018 - short movie- 5min 50sec]</small>
+				<br><a href="https://vimeo.com/242306681" target="_blank">Carassius Auratus</a> <small>[2017 - video short - 1min 05sec]</small>
+				<br><a href="https://vimeo.com/249239906" target="_blank">ΒΕΝΤΕΜΑ | Vendemma | Συγκομιδή</a> <small>[2017 - video short - 1min 40sec]</small>
+				<br><a href="https://vimeo.com/223741884" target="_blank">Impedance</a> <small>[2017 - video short - 32sec]</small>
 				<br><a href="https://vimeo.com/yskaris" target="_blank">Vimeo</a></p>
 			</div>
 		</div></div>
 		<div class="row mt-2 row3"><div class="col"><h4><a id="white_text" href="https://github.com/kutsukos" target="_blank">Software Development</a></h4></div></div>		
-		<div class="row mt-2 row5" id=""><div class="col"><h4 id="actCON" >About me // Contact</h4><div class="subCON"><p>A Computer Scientist, who likes to create useful applications. Sometimes, I like to create useless stuff too.<br>Someone could say, that I just like to create.<br><br><a href="https://www.linkedin.com/in/ioannis-koutsoukos-246370101/" target="_blank">LinkedIn</a></p></div></div></div>
+		<div class="row mt-2 row4" id=""><div class="col"><h4 id="actCON" >About me // Contact</h4><div class="subCON"><p>A Computer Scientist, who likes to create useful applications. Sometimes, I like to create useless stuff too.<br>Someone could say, that I just like to create.<br><br><a href="https://www.linkedin.com/in/ioannis-koutsoukos-246370101/" target="_blank">LinkedIn</a></p></div></div></div>
 	</div>
 </body>
+<script>
+	$(function(){$('#actFILM').click(function(){$('.subFILM').slideToggle();});});
+	$(function() {$('#actCON').click(function(){$('.subCON').slideToggle();});});
+</script>
 </html>
