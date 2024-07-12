@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #41678c;
+            color: #f8f9fa;
+        }
+        .center-content {
+            text-align: center;
+        }
+        .center-content img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media (min-width: 768px) {
+            .center-content img {
+                width: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container center-content">
+        <img src="IMG_4505.jpg" class="img-fluid" alt="Me hugging you">
+        <p id="countdown" class="lead"></p>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        function updateCountdown() {
+            // Current date and time
+            const now = new Date();
+
+            // Target date and time
+            const targetDate = new Date('2024-08-09T15:50:00');
+
+            // Calculate the difference in milliseconds
+            const timeDifference = targetDate - now;
+
+            // Convert the difference to days, hours, minutes, and seconds
+            const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="countdown"
+            document.getElementById("countdown").innerHTML = `Time remaining till I can hug u: ${days} days, ${hours} hours, ${minutes} minutes, and ${seconds} seconds.`;
+        }
+
+        // Update the countdown every second
+        setInterval(updateCountdown, 1000);
+
+        // Initial call to display the countdown immediately on page load
+        updateCountdown();
+    </script>
+</body>
+</html>
+
+
