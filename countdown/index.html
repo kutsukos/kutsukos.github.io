@@ -12,7 +12,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #cba3bd;
+            background-color: #dc3f2e;
             color: #f8f9fa;
         }
         .center-content {
@@ -20,12 +20,11 @@
         }
         .center-content img {
             max-width: 100%;
-            height: auto;
         }
 
         @media (min-width: 768px) {
             .center-content img {
-                width: 400px;
+                width: 340px;
             }
         }
     </style>
@@ -33,7 +32,7 @@
 <body>
     <div class="container center-content">
         <img src="IMG_4505.jpg" class="img-fluid" alt="Me hugging you">
-        <p id="countdown" class="lead"></p>
+        <p id="countdown" class="lead">We are together!</p>
     </div>
 
     <!-- Bootstrap JS and dependencies -->
@@ -41,32 +40,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <script>
-        function updateCountdown() {
-            // Current date and time
-            const now = new Date();
-
-            // Target date and time
-            const targetDate = new Date('2024-08-09T15:50:00');
-
-            // Calculate the difference in milliseconds
-            const timeDifference = targetDate - now;
-
-            // Convert the difference to days, hours, minutes, and seconds
-            const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
-
-            // Display the result in the element with id="countdown"
-            document.getElementById("countdown").innerHTML = `<b>Time remaining till I can hug you again:<br> ${days} day(s), ${hours} hour(s), ${minutes} minute(s).</b>`;
-        }
-
-        // Update the countdown every second
-        setInterval(updateCountdown, 1000);
-
-        // Initial call to display the countdown immediately on page load
-        updateCountdown();
-    </script>
 </body>
 </html>
 
