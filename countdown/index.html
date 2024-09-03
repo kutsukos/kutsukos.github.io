@@ -31,7 +31,7 @@
 </head>
 <body>
     <div class="container center-content">
-        <img src="IMG_4505.jpg" class="img-fluid" alt="Me hugging you">
+        <img src="IMG_4505.jpg" class="img-fluid" alt="Me hugging you" id="picture">
         <p id="countdown" class="lead"></p>
     </div>
 
@@ -47,7 +47,6 @@
 
             // Target date and time
             const targetDate = new Date('2024-09-05T15:00:00');
-
             // Calculate the difference in milliseconds
             const timeDifference = targetDate - now;
 
@@ -57,11 +56,16 @@
             const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
 
             // Display the result in the element with id="countdown"
-            document.getElementById("countdown").innerHTML = `<b>Time remaining till I can hug you again:<br> ${days} day(s), ${hours} hour(s), ${minutes} minute(s).</b>`;
+            if (minutes > 0) {
+                document.getElementById("countdown").innerHTML = `<b>Time remaining till I can hug you again:<br> ${days} day(s), ${hours} hour(s), ${minutes} minute(s).</b>`;
+            } else {
+                document.getElementById("countdown").innerHTML = `<b>We are together! :-)</b>`;
+                document.getElementById("picture").src = 'IMG_4506.jpg';
+            }
         }
 
         // Update the countdown every second
-        setInterval(updateCountdown, 1000);
+        setInterval(updateCountdown, 10000);
 
         // Initial call to display the countdown immediately on page load
         updateCountdown();
