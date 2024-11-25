@@ -1,1 +1,1 @@
-Visit https://kutsukos.github.io/ for moar!
+Visit https://github.com/kutsukos/ for moar!
